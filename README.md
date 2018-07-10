@@ -10,6 +10,7 @@
 1. Download the latest Vidyo.io Android & iOS SDK packages:
 
     > https://static.vidyo.io/latest/package/VidyoClient-AndroidSDK.zip
+    
     > https://static.vidyo.io/latest/package/VidyoClient-iOSSDK.zip
     
 2. **Unzip VidyoClient-AndroidSDK folder and move contents of `VidyoClient-AndroidSDK/lib/android` 
