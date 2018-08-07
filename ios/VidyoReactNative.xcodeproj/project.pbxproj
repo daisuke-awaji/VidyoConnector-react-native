@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -302,7 +302,6 @@
 		10D3075B20E2287B0022D126 /* VidyoConnectorManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; name = VidyoConnectorManager.m; path = VidyoReactNative/VidyoConnectorManager.m; sourceTree = "<group>"; };
 		10D3076A20E38FB30022D126 /* VidyoReactNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = VidyoReactNative.entitlements; path = VidyoReactNative/VidyoReactNative.entitlements; sourceTree = "<group>"; };
 		10EA3FFA20EA01A900EBE03F /* RNNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNNotification.m; path = VidyoReactNative/RNNotification.m; sourceTree = "<group>"; };
-		10EA402120EA15DF00EBE03F /* RNNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNNotification.h; path = ../../../.Trash/RNNotification.h; sourceTree = "<group>"; };
 		10EA402B20EA38F000EBE03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = VidyoReactNative/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10EA402F20EA3A0D00EBE03F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = VidyoReactNative/Images.xcassets; sourceTree = "<group>"; };
 		10EA403120EA3AC900EBE03F /* Vidyo.io-Vertical-Dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Vidyo.io-Vertical-Dark@2x.png"; path = "VidyoReactNative/Vidyo.io-Vertical-Dark@2x.png"; sourceTree = "<group>"; };
@@ -318,6 +317,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8378082A2119EA1D00855AC6 /* RNNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNNotification.h; path = VidyoReactNative/RNNotification.h; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -412,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				10D3076A20E38FB30022D126 /* VidyoReactNative.entitlements */,
+				8378082A2119EA1D00855AC6 /* RNNotification.h */,
 				10EA402A20EA38F000EBE03F /* Main.storyboard */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -420,7 +421,6 @@
 				10EA402F20EA3A0D00EBE03F /* Images.xcassets */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				10D3075B20E2287B0022D126 /* VidyoConnectorManager.m */,
-				10EA402120EA15DF00EBE03F /* RNNotification.h */,
 				10EA3FFA20EA01A900EBE03F /* RNNotification.m */,
 				10EA403120EA3AC900EBE03F /* Vidyo.io-Vertical-Dark@2x.png */,
 			);
@@ -566,7 +566,6 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = XV4686B6R4;
 						LastSwiftMigration = 0940;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -580,7 +579,7 @@
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "VidyoReactNative" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -973,7 +972,7 @@
 				CODE_SIGN_ENTITLEMENTS = VidyoReactNative/VidyoReactNative.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = XV4686B6R4;
+				DEVELOPMENT_TEAM = 6888NB32SR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/lib/ios/",
 					"$(PROJECT_DIR)/lib/ios",
@@ -981,7 +980,10 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/ios/VidyoClientIOS.framework/Headers";
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/lib/ios/VidyoClientIOS.framework/Headers";
 				INFOPLIST_FILE = VidyoReactNative/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib/ios/";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -989,6 +991,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = VidyoReactNative;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OBJC_BRIDGING_HEADER = "VidyoReactNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1003,7 +1006,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = VidyoReactNative/VidyoReactNative.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XV4686B6R4;
+				DEVELOPMENT_TEAM = 6888NB32SR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/lib/ios/",
 					"$(PROJECT_DIR)/lib/ios",
@@ -1011,7 +1014,10 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/ios/VidyoClientIOS.framework/Headers";
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/lib/ios/VidyoClientIOS.framework/Headers";
 				INFOPLIST_FILE = VidyoReactNative/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib/ios/";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
